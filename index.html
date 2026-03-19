@@ -92,6 +92,7 @@ section { padding: 100px 60px; }
 .cred::before { content: '✦'; color: var(--rose); }
 .about-photos { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
 .artem-trainer-badge { position: absolute; top: 12px; right: 12px; background: var(--rose); color: white; font-size: 0.6rem; letter-spacing: 1px; text-transform: uppercase; padding: 4px 10px; font-weight: 700; }
+.about-photo-wrap.artem-trainer img { aspect-ratio: 1; object-position: center top; border-radius: 0; }
 .about-photo-wrap { position: relative; overflow: hidden; }
 .about-photo-wrap img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; filter: saturate(0.9) contrast(1.05); transition: transform 0.5s; }
 .about-photo-wrap:hover img { transform: scale(1.04); }
@@ -247,7 +248,7 @@ footer { background: #050203; padding: 40px 60px; display: flex; justify-content
         <img src="img/olya.jpg" alt="Оля">
         <div class="about-photo-name">Оля 🌺</div>
       </div>
-      <div class="about-photo-wrap">
+      <div class="about-photo-wrap artem-trainer">
         <img src="img/artem-face.jpg" alt="Артём">
         <div class="about-photo-name">Артём 🔥</div>
         <div class="artem-trainer-badge">Лингам-Гуру</div>
