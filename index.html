@@ -90,13 +90,11 @@ section { padding: 100px 60px; }
 .credentials { margin-top: 30px; display: flex; flex-direction: column; gap: 12px; }
 .cred { display: flex; align-items: center; gap: 12px; font-size: 0.8rem; color: rgba(255,255,255,0.5); }
 .cred::before { content: '✦'; color: var(--rose); }
-.about-visual {
-  aspect-ratio: 1; border-radius: 50%;
-  background: radial-gradient(circle, rgba(201,123,138,0.15) 0%, transparent 70%);
-  border: 1px solid rgba(201,123,138,0.2);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 8rem;
-}
+.about-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.about-photo-wrap { position: relative; overflow: hidden; }
+.about-photo-wrap img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; filter: saturate(0.9) contrast(1.05); transition: transform 0.5s; }
+.about-photo-wrap:hover img { transform: scale(1.04); }
+.about-photo-name { position: absolute; bottom: 14px; left: 14px; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.8); }
 
 /* METHODS */
 .methods { background: var(--dark); }
@@ -220,7 +218,16 @@ footer { background: #050203; padding: 40px 60px; display: flex; justify-content
         <div class="cred">Победители премии «Самый смелый коучинг года»</div>
       </div>
     </div>
-    <div class="about-visual">🌸</div>
+    <div class="about-photos">
+      <div class="about-photo-wrap">
+        <img src="img/valeria.jpg" alt="Валерия">
+        <div class="about-photo-name">Валерия 🌸</div>
+      </div>
+      <div class="about-photo-wrap">
+        <img src="img/kristina.jpg" alt="Кристина">
+        <div class="about-photo-name">Кристина 🌺</div>
+      </div>
+    </div>
   </div>
 </section>
 
