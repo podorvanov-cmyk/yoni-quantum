@@ -141,15 +141,10 @@ section { padding: 100px 60px; }
 .test-result { display: inline-block; margin-top: 16px; background: rgba(201,123,138,0.1); border: 1px solid rgba(201,123,138,0.25); color: var(--rose-light); font-size: 0.68rem; letter-spacing: 1px; padding: 5px 12px; }
 
 /* ARTEM */
-.artem-section { background: var(--dark2); padding: 100px 60px; }
-.artem-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 380px 1fr; gap: 80px; align-items: center; }
-.artem-photo-wrap { position: relative; display: flex; justify-content: center; align-items: center; }
-.artem-photo-wrap img { width: 280px; height: 280px; object-fit: cover; object-position: top center; border-radius: 50%; border: 4px solid var(--rose); filter: contrast(1.1) saturate(0.9); box-shadow: 0 0 60px rgba(201,123,138,0.4); }
-.artem-aura {
-  position: absolute; width: 320px; height: 320px; border-radius: 50%; z-index: -1;
-  background: radial-gradient(ellipse, rgba(201,123,138,0.3) 0%, transparent 70%);
-  animation: pulse 3s ease-in-out infinite;
-}
+.artem-section { background: var(--dark2); padding: 80px 60px; }
+.artem-inner { max-width: 800px; margin: 0 auto; }
+.artem-photo-wrap { display: none; }
+.artem-aura { display: none; }
 @keyframes pulse { 0%,100% { opacity: 0.5; transform: scale(1); } 50% { opacity: 1; transform: scale(1.05); } }
 .artem-desc { font-size: 0.88rem; line-height: 1.9; color: rgba(255,255,255,0.6); margin-bottom: 14px; }
 .artem-desc strong { color: var(--rose-light); }
