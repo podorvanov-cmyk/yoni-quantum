@@ -140,10 +140,10 @@ section { padding: 100px 60px; }
 /* ARTEM */
 .artem-section { background: var(--dark2); padding: 100px 60px; }
 .artem-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 380px 1fr; gap: 80px; align-items: center; }
-.artem-photo-wrap { position: relative; }
-.artem-photo-wrap img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top center; filter: contrast(1.1) saturate(0.9); }
+.artem-photo-wrap { position: relative; display: flex; justify-content: center; align-items: center; }
+.artem-photo-wrap img { width: 280px; height: 280px; object-fit: cover; object-position: top center; border-radius: 50%; border: 4px solid var(--rose); filter: contrast(1.1) saturate(0.9); box-shadow: 0 0 60px rgba(201,123,138,0.4); }
 .artem-aura {
-  position: absolute; inset: -10px; z-index: -1;
+  position: absolute; width: 320px; height: 320px; border-radius: 50%; z-index: -1;
   background: radial-gradient(ellipse, rgba(201,123,138,0.3) 0%, transparent 70%);
   animation: pulse 3s ease-in-out infinite;
 }
@@ -254,7 +254,7 @@ footer { background: #050203; padding: 40px 60px; display: flex; justify-content
 <section class="artem-section">
   <div class="artem-inner">
     <div class="artem-photo-wrap">
-      <img src="img/artem.jpg" alt="Артём">
+      <img src="img/artem-face.jpg" alt="Артём">
       <div class="artem-aura"></div>
     </div>
     <div class="artem-text">
